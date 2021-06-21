@@ -1,0 +1,57 @@
+<!DOCTYPE>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>My CV</title>
+    <style>
+	  div > p{ font-size:40px;text-align:center; background-color:#FFB8E6; color:white;} /*底色粉紅字白色，置中*/
+	  a:hover{color:#B9BFFF;} /*移動到超連結上換色*/
+	  a:active{color:#FF88D5;} /*點擊換色*/
+	  a{ font-size:17px;} /*連結字大小*/
+	  ul{ list-style-type:none;}  /*沒有list type*/
+	  td{background-color:#B8DEFF;}  /*換表格顏色*/
+	  tr{font-weight:bold; color:5B86FF;} /*粗體，字顏色變化*/
+	</style>
+  </head>
+  <body onload="alert('Hello this is my web final exam!!')">
+    <div>
+	  <p>Miyawaki Sakura FROM IZ*ONE</p>
+	
+	  <img src="https://www.allkpop.com/upload/2021/05/content/171947/1621295238-789d6363-e728-4fef-922b-792c90093fb9.jpg" width=210px height=250px>
+	  <hr color=#8A94FF>
+	  <h2>About Me</h2>
+	  <table>
+	    <tbody>
+	      <tr>
+		    <td>Name</td><td>宮脇 咲良 みやわき さくら</td>
+		  </tr>
+		  <tr>
+	        <td>Birthday</td><td>1998/03/19</td>
+		  </tr>
+		  <tr>
+		    <td>country</td><td>日本 鹿兒島縣鹿兒島市</td>
+	      </tr>
+		</tbody>
+	  </table>
+     <h2>Reference links<h2>
+	 <ul>
+       <li><a href="https://www.instagram.com/39saku_chan/?hl=zh-tw" target="_blank">Instagram</a>
+	   <li><a href="https://twitter.com/39saku_chan" target="_blank">Twitter</a>
+	 </ul>
+	 <p style="font-size:20px;color:red">Experience</p>
+	 <p id="exp" style="font-size:17px"></p>
+	 <button type="button" onclick="myfunction()">Click me!!!</button>
+	 <h2> Some videos</h2>
+	  <button type="button" onclick="video()">Video!!!</button>
+	 <a href="https://www.youtube.com/watch?v=hjlyaPid_2I" target="_blank" id="v"></a>
+    </div>
+	<script>
+	  function myfunction(){
+	    document.getElementById("exp").innerHTML = "2018年10月29日至2021年4月29日期間，專任IZ*ONE成員。2021年6月19日自HKT48畢業。";
+	  }
+	  function video(){
+	    document.getElementById("v").innerHTML="Panorama"
+	  }
+    </script>
+  </body>
+</html>
